@@ -17,4 +17,8 @@ Here  we represent the confusion matrix of the Naïve Bayes model
 
 ## Discussion
 
-As reveal by the confusion matrix, the model is not that good as expected. In fact the <strong> Naïve Bayes </strong> approach give a very good classification for <strong> HAM Email ( good mail ) </strong> but give a very bad result for <strong> SPAM Email </strong>; the one we are interest in. This can be explain by the assumption use behind this model that  the occurence 
+As reveal by the confusion matrix, the model is not that good as expected. In fact the <strong> Naïve Bayes </strong> approach give a very good classification for <strong> HAM Email ( good mail ) </strong> but give a very bad result for <strong> SPAM Email </strong>; the one we are interest in. This can be explain by the assumption use behind this model : <strong> The Word indepence frequency </strong>
+
+## Author
+- Name : <strong> Brice KENGNI ZANGUIM </strong>
+- Email : <strong> kenzabri2@yahoo.com </strong>
