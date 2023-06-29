@@ -9,7 +9,7 @@ An email can be consider as a set of word and base on the word composition of a 
 <strong> Naïve Bayes </strong> Theorem is derive from the famous <strong> Bayes Theorem </strong> that give the posterior probability based on the prior probability of events. Let's suppose we have a set of sentences $X =$ { $x_1, x_2, x_3, . . . $} where every sentence $x_i$ contain a set of words $W_i = ${ $w_{i2} , w_{i2}, w_{i3}, . . .$}. Every sentence $x_i$ can be classify into two class $C_i$ for $i$ in {1, 2}. The probability of the sentence $x_i$ to be of class $C_j$ is given by : 
 
 $$
-P(C_j | x_i) = \frac{P(C_j \cap x_i)}{P(x_i)}
+P(C_j | x_i) = \frac{P(C_j \cap x_i)}{P(x_i)} = \frac{P(x_i | C_j).P(C_j)}{P(x_i)}
 $$
 
 with 
