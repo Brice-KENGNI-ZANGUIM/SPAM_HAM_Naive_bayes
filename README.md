@@ -49,6 +49,7 @@ Maximize: \[ P(x_i | C_j).P(C_j) \]
 with  : \[ C_i \]  
 $$
 
+
 in Naïve bayes assumption
 
 ## Result 
