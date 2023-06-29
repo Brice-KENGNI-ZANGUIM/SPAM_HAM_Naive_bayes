@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from sklearn import metrics
 import numpy as np
 
-def print_confusion_matrix(label_true , label_predict, class_names, figsize = (8,7), cmap = None): 
+def print_confusion_matrix(label_true , label_predict, class_names, figsize = (8,7), cmap = plt.cm.Blues): 
     import itertools
     
     """
@@ -26,7 +26,7 @@ def print_confusion_matrix(label_true , label_predict, class_names, figsize = (8
     confusion_matrix = confusion_matrix.T
     with plt.style.context(('ggplot', 'seaborn')):
         fig = plt.figure(figsize=figsize, num=1)
-        plt.imshow(confusion_matrix, interpolation='nearest',cmap= plt.cm.Blues )
+        plt.imshow(confusion_matrix, interpolation='nearest',cmap= cmap )
         plt.xticks([0,1],class_names , )
         plt.yticks([0,1],class_names)
         plt.xlabel('Vraie étiquette' , size = 3*np.min(figsize) )

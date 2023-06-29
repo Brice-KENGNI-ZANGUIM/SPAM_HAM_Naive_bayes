@@ -25,7 +25,7 @@ if __name__ == "__main__" :
     #Evaluate the model :  confusion matrix ploting
     true_label    = test_emails["spam"]
     predict_label = test_emails["text"].apply(lambda x : int(naive_bayes_classifier( x , word_freq, class_freq) > 0.5))
-    print_confusion_matrix(true_label , predict_label , class_names=("ham", "spam"), cmap = "hot")
+    print_confusion_matrix(true_label , predict_label , class_names=("ham", "spam"), cmap = "hot_r")
 
     # Test your function
     msg = "Thank you for your application to our job proposition, we will like to invite you for an interview"
