@@ -38,8 +38,8 @@ $$
 Here we calculate all the $P(C_i | x_j)$ for i = 1,2 and get the one with the maximum value. The corresponding class $C_k$ with the maximum probability will be consider as the predict sentence's class. Since the denominator $P(x_j)$ of $P(C_i | x_j )$ is class independant and thus the same for every $P(C_i [ x_j])$, the maximisation problem of $P(C_i | x_j)$ can be reconsider as a maximisation problem of the numérator who is the only class dependant :
 
 $$
-Maximize: \[ P(C_i | x_j) \]  
-with  : \[ C_i \]  
+Maximize: \( \vspace{2mm} P(C_i | x_j) \vspace{2mm} \]) 
+with  : \( C_i \)  
 $$
 
 is equivalent to 
@@ -53,7 +53,8 @@ $$
 in Naïve bayes assumption
 
 ## B - Result 
-Here  we represent the confusion matrix of the Naïve Bayes model 
+Here  the  result are present in the form of a confusion matrix that provide many informations about the precision of our model
+Here is the confusion matrix of the Naïve Bayes model 
 
 ![confusion matrix](medias/images/confusion_matrix.png)
 

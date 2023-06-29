@@ -39,3 +39,11 @@ def naive_bayes_classifier(text, word_freq , class_freq  ):
     prob_spam = cumulative_product_spam / (cumulative_product_spam + cumulative_product_ham)
         
     return prob_spam
+
+def make_prediction( dataframe , word_freq , class_freq) :
+
+    f = lambda x : int(naive_bayes_classifier( x , word_freq, class_freq) > 0.5 )
+
+    predict_label = dataframe["text"].apply( f )
+
+    return predict_label
