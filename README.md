@@ -5,7 +5,7 @@ In this github you find a python script for <strong> spam detection </strong> ba
 
 An email can be consider as a set of word and base on the word composition of a previous set of email we can builb a classifier  based Naïve Bayes Theorem to mesure the probability that any given email is an spam or ham.
 
-# Method
+# A - Method
 <strong> Naïve Bayes </strong> Theorem is derive from the famous <strong> Bayes Theorem </strong> that give the posterior probability based on the prior probability of events. Let's suppose we have a set of sentences $X =$ { $x_1, x_2, x_3, . . . $} where every sentence $x_i$ contain a set of words $W_i = ${ $w_{i2} , w_{i2}, w_{i3}, . . .$}. Every sentence $x_i$ can be classify into two class $C_i$ for $i$ in {1, 2}. The probability of the sentence $x_i$ to be of class $C_j$ is given by : 
 
 $$
@@ -52,12 +52,12 @@ $$
 
 in Naïve bayes assumption
 
-## Result 
+## B - Result 
 Here  we represent the confusion matrix of the Naïve Bayes model 
 
 ![confusion matrix](medias/images/confusion_matrix.png)
 
-## Discussion
+## C - Discussion
 
 As reveal by the confusion matrix, the model is not that good as expected. In fact the <strong> Naïve Bayes </strong> approach give a very good classification for <strong> HAM Email ( good mail ) </strong> but give a very bad result for <strong> SPAM Email </strong>; the one we are interest in. This can be explain by the assumption use behind this model : <strong> The Word indepence frequency </strong>
 
