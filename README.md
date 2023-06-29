@@ -1,4 +1,5 @@
 # SPAM Detector : Naïve Bayes Approach
+![Bayes Therem](medias/images/naive_approach.png)
 
 In this github you find a python script for <strong> spam detection </strong> based on a <strong> Naïve Bayes approach.</strong> The Naïve Bayes theorem try to figure out a posterior probability base on prior probabiility. 
 
@@ -11,11 +12,13 @@ $$
 P(C_j | x_i) = \frac{P(C_j \cap x_i)}{P(x_i)}
 $$
 
+with 
 
-![Bayes Therem](medias/images/posterior.png)
+$$
+P(x_i) = P( w_{i1} \cap w_{i2} \cap w_{i3} \cap . . . )
+$$
 
-
-
+The <strong> Naïve Bayes <strong> make an additiional asumption on the independance of the words probabiltys
 
 Thank to Bayes Theorem
 ## Result 
