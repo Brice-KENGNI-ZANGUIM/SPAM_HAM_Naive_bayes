@@ -21,8 +21,14 @@ $$
 The <strong> Naïve Bayes </strong> make an additiional asumption on the <strong>independance of words occurence</strong> to each other. more precisely it make the assumption that the words in sentences are independants to each other. In the word of probability, the sentence probability can be rewrite as a words probability products : 
 
 $$
-P(x_i) = P( w_{i1} \cap w_{i2} \cap w_{i3} \cap . . . \cap w_{in} )  \\
-       = P(w_{i1}).P(w_{i2}).P(w_{i3}). . .P(w_{in}) \\
+P(x_i) = P( w_{i1} \cap w_{i2} \cap w_{i3} \cap . . . \cap w_{in} )  
+$$
+
+$$
+       = P(w_{i1}).P(w_{i2}).P(w_{i3}). . .P(w_{in}) 
+$$
+
+$$
        = \prod_{j=1}^{j=n} P(w_{ij})
 $$
 
