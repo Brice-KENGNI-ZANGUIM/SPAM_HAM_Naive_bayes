@@ -1,6 +1,8 @@
 # SPAM Detector : Naïve Bayes Approach
 
-In this github you find a python script for <strong> spam detection </strong> based on a <strong> Naïve Bayes approach.</strong> The Naïve Bayes theorem try to figure out a posterior probability base on prior probabiility. An email can be consider as a set of word and base on the word composition of a previous set of email we can builb a classifier  based Naïve Bayes Theorem to mesure the probability that any given email is an spam or ham.
+In this github you find a python script for <strong> spam detection </strong> based on a <strong> Naïve Bayes approach.</strong> The Naïve Bayes theorem try to figure out a posterior probability base on prior probabiility. 
+
+An email can be consider as a set of word and base on the word composition of a previous set of email we can builb a classifier  based Naïve Bayes Theorem to mesure the probability that any given email is an spam or ham.
 
 # Method
 <strong> Naïve Bayes </strong> Theorem is derive from the famous <strong> Bayes Theorem </strong> that give the posterior probability based on the prior probability of events. 
@@ -18,6 +20,10 @@ Here  we represent the confusion matrix of the Naïve Bayes model
 ## Discussion
 
 As reveal by the confusion matrix, the model is not that good as expected. In fact the <strong> Naïve Bayes </strong> approach give a very good classification for <strong> HAM Email ( good mail ) </strong> but give a very bad result for <strong> SPAM Email </strong>; the one we are interest in. This can be explain by the assumption use behind this model : <strong> The Word indepence frequency </strong>
+
+In fact, in real life situation it's obvious that the word are dependant to each other and can be consider independently. In fact if i write a sentence and i start writing <strong>" Yesterday i . . ." </strong>, it's obvious that the next word can't be any random word, it have to be a verb or a specific type of verb depending of the meaning we want to give to the sentence. So the word are dependent to each other and can't be consider as independents.
+
+There are many other limitation of this model who can explain the result we get . . .
 
 ## Author
 - Name : <strong> Brice KENGNI ZANGUIM </strong>
