@@ -22,7 +22,7 @@ The <strong> Naïve Bayes <strong> make an additiional asumption on the independ
 
 $$
 P(x_i) &= P( w_{i1} \cap w_{i2} \cap w_{i3} \cap . . . \cap w_{in} ) \\
-       &= P(w_{i1}).P(w_{i2}).P(w_{i3}). . .P(w_{in})\\
+       &= P(w_{i1}).P(w_{i2}).P(w_{i3}). . .P(w_{in}) \\
        &= \prod_{j=1}^{j=n} P(w_{ij})
 $$
 
