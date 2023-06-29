@@ -17,7 +17,7 @@ def split_datas ( dataframe , frac = (.7 , .3 ) ) :
 
 def load_dataset( ): 
     # Load the dataset
-    emails = pd.read_csv('medias/emails.csv')
+    emails = pd.read_csv('medias/csv/emails.csv')
 
     # Helper function that converts text to lowercase and splits words into a list
     def process_email(text):
