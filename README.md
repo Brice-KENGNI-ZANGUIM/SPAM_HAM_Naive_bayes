@@ -29,9 +29,9 @@ $$
 and
 
 $$
-P(x_i) = P( w_{i1} \cap w_{i2} \cap w_{i3} \cap . . . \cap w_{in} ) 
-= P(w_{i1}).P(w_{i2}).P(w_{i3}). . .P(w_{in}) 
-= \prod_{j=1}^{j=n} P(w_{ij})
+P(x_i | C_j) = P( w_{i1} \cap w_{i2} \cap w_{i3} \cap . . . \cap w_{in} | C_j) 
+= P(w_{i1}| C_j).P(w_{i2}| C_j).P(w_{i3}| C_j). . .P(w_{in}| C_j) 
+= \prod_{j=1}^{j=n} P(w_{ij}| C_j)
 $$
 
 
