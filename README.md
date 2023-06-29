@@ -44,10 +44,7 @@ $$
 
 is equivalent to 
 
-$$
-Maximize: \[    P(x_i | C_j).P(C_j)    \]  
-with respect to  : \[ C_i \]  
-$$
+$ Maximize: \{    P(x_i | C_j).P(C_j)    \}  with respect to  : \{ C_i \}   $
 
 
 in Naïve bayes assumption
