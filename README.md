@@ -39,12 +39,15 @@ Here we calculate all the $P(C_i | x_j)$ for i = 1,2 and get the one with the ma
 
 $$
 Maximize: \(     P(C_i | x_j)    \]) 
-with respect to  : \( C_i \)  
+with  : \( C_i \)  
 $$
 
 is equivalent to 
 
-$ Maximize: \{    P(x_i | C_j).P(C_j)    \}  with respect to  : \{ C_i \}   $
+$$
+Maximize: \(    P(x_i | C_j).P(C_j)    \]) 
+with   : \( C_i \)  
+$$
 
 
 in Naïve bayes assumption
