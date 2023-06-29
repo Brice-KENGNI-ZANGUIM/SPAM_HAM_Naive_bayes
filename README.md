@@ -9,7 +9,8 @@ An email can be consider as a set of word and base on the word composition of a 
 <strong> Naïve Bayes </strong> Theorem is derive from the famous <strong> Bayes Theorem </strong> that give the posterior probability based on the prior probability of events. Let's suppose we have a set of sentences $X =$ { $x_1, x_2, x_3, . . . $} where every sentence $x_i$ contain a set of words $W_i = ${ $w_{i2} , w_{i2}, w_{i3}, . . .$}. Every sentence $x_i$ can be classify into two class $C_i$ for $i$ in {1, 2}. The probability of the sentence $x_i$ to be of class $C_j$ is given by : 
 
 $$
-P(C_j | x_i) = \frac{P(C_j \cap x_i)}{P(x_i)} = \frac{P(x_i | C_j).P(C_j)}{P(x_i)}
+P(C_j | x_i) = \frac{P(C_j \cap x_i)}{P(x_i)} 
+             = \frac{P(x_i | C_j).P(C_j)}{P(x_i)}
 $$
 
 with 
@@ -22,22 +23,16 @@ The <strong> Naïve Bayes </strong> make an additiional asumption on the <strong
 
 $$
 P(x_i) = P( w_{i1} \cap w_{i2} \cap w_{i3} \cap . . . \cap w_{in} )  
-$$
-
-$$
-                      = P(w_{i1}).P(w_{i2}).P(w_{i3}). . .P(w_{in}) 
-$$
-
-$$
-                                      = \prod_{j=1}^{j=n} P(w_{ij})
+       = P(w_{i1}).P(w_{i2}).P(w_{i3}). . .P(w_{in}) 
+       = \prod_{j=1}^{j=n} P(w_{ij})
 $$
 
 and
 
 $$
 P(x_i | C_j) = P( w_{i1} \cap w_{i2} \cap w_{i3} \cap . . . \cap w_{in} | C_j) 
-= P(w_{i1}| C_j).P(w_{i2}| C_j).P(w_{i3}| C_j). . .P(w_{in}| C_j) 
-= \prod_{j=1}^{j=n} P(w_{ij}| C_j)
+             = P(w_{i1}| C_j).P(w_{i2}| C_j).P(w_{i3}| C_j). . .P(w_{in}| C_j) 
+             = \prod_{j=1}^{j=n} P(w_{ij}| C_j)
 $$
 
 
