@@ -35,19 +35,20 @@ P(x_i | C_j) = P( w_{i1} \cap w_{i2} \cap w_{i3} \cap . . . \cap w_{in} | C_j)
              = \prod_{j=1}^{j=n} P(w_{ij}| C_j)
 $$
 
-Here we calculate all the $P(C_i | x_j)$ for i = 1,2 and get the one with the maximum value. The corresponding class $C_k$ with the maximum probability will be consider as the predict sentence's class. Since the denominator $P(x_j)$ of $P(C_i | x_j )$ is class independant and thus the same for every $P(C_i [ x_j])$, the maximisation problem of $P(C_i | x_j)$ can be reconsider as a maximisation problem of the numérator who is the only class dependant.
+Here we calculate all the $P(C_i | x_j)$ for i = 1,2 and get the one with the maximum value. The corresponding class $C_k$ with the maximum probability will be consider as the predict sentence's class. Since the denominator $P(x_j)$ of $P(C_i | x_j )$ is class independant and thus the same for every $P(C_i [ x_j])$, the maximisation problem of $P(C_i | x_j)$ can be reconsider as a maximisation problem of the numérator who is the only class dependant :
 
 $$
 Maximize: \[ P(C_i | x_j) \]  
 with  : \[ C_i \]  
 $$
 
-equivalent to 
+is equivalent to 
 
 $$
 Maximize: \[ P(x_i | C_j).P(C_j) \]  
 with  : \[ C_i \]  
 $$
+in Naïve bayes assumption
 
 ## Result 
 Here  we represent the confusion matrix of the Naïve Bayes model 
