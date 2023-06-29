@@ -1,15 +1,18 @@
 def word_freq_per_class( dataframe ):
     """
-    Calculates the frequency of words in each class (spam and ham) based on a given dataframe.
+    PARAMETERS :
+    -----------
+        Calculates the frequency of words in each class (spam and ham) based on a given dataframe.
 
-    Args:
-        dataframe (pandas.DataFrame): The input dataframe containing email data, 
+    PARAMETERS :
+    -----------
+        - dataframe (pandas.DataFrame): The input dataframe containing email data, 
         with a column named 'words' representing the words in each email.
 
     Returns:
-        dict: A dictionary containing the frequency of words in each class. 
-        The keys of the dictionary are words, and the values are nested dictionaries with keys 
-        'spam' and 'ham' representing the frequency of the word in spam and ham emails, respectively.
+        - dict: A dictionary containing the frequency of words in each class. 
+            The keys of the dictionary are words, and the values are nested dictionaries with keys 
+            'spam' and 'ham' representing the frequency of the word in spam and ham emails, respectively.
     """
     
     word_freq_dict = {}
@@ -36,13 +39,16 @@ def word_freq_per_class( dataframe ):
 
 def class_frequencies(dataframe):
     """
-    Calculate the frequencies of classes in a DataFrame.
+    DESCRIPTION :
+    ------------
+        Calculate the frequencies of classes in a DataFrame.
 
-    Args:
-        dataframe (DataFrame): The input DataFrame containing a column 'spam' indicating class labels.
+    PARAMETERS:
+    ----------
+        - dataframe (DataFrame): The input DataFrame containing a column 'spam' indicating class labels.
 
-    Returns:
-        dict: A dictionary containing the frequencies of the classes.
+    RETURNS :
+        - dict: A dictionary containing the frequencies of the classes.
             The keys are 'spam' and 'ham', representing the class labels.
             The values are the corresponding frequencies in the DataFrame.
     """

@@ -1,6 +1,22 @@
 import pandas as pd
 
 def split_datas ( dataframe , frac = (.7 , .3 ) ) :
+    """
+    DESCRIPTION :
+    -----------
+        Take a DateFrame and split into to differents dataframes for training and testing
+
+    PARAMETERS :
+    -----------
+        - dataframe (DataFrame): initial DataFrame to be split in two parts
+        - frac ( tuple) : a tuple that contain the proportion of train and test data to perform
+            The first element correspond to the proportion of training set and the second to the test
+
+    RETURN :
+    ------
+        - DataFrame , DataFrame : a tuple of DataFrame. The first element is the training and the second the test
+    """
+
     # shuffel the datas
     dataframe = dataframe.sample(frac = 1)
 
@@ -13,11 +29,23 @@ def split_datas ( dataframe , frac = (.7 , .3 ) ) :
 
     return train_data, test_data
 
+def load_dataset( datapath ):
+    """
+    DESCRIPTION :
+    ------------
+        load .csv Data from a given path and process it
 
+    PARAMETERS :
+    -----------
+        - datapath ( str ) : the path to the data to load
 
-def load_dataset( ): 
+    RETURNS: 
+    -------
+        - DataFrame : Load and process DataFrame
+    """ 
+
     # Load the dataset
-    emails = pd.read_csv('medias/csv/emails.csv')
+    emails = pd.read_csv(datapath )
 
     # Helper function that converts text to lowercase and splits words into a list
     def process_email(text):

@@ -9,7 +9,7 @@ from frequencies import ( word_freq_per_class ,
 
 if __name__ == "__main__" :
     # loading the datas ( emails )
-    emails = load_dataset()
+    emails = load_dataset(datapath='medias/csv/emails.csv')
 
     # generate train and tests emails datas
     train_emails , test_emails = split_datas( emails , (.5 , .5))
