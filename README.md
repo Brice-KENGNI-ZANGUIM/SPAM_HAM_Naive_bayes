@@ -18,7 +18,13 @@ $$
 P(x_i) = P( w_{i1} \cap w_{i2} \cap w_{i3} \cap . . . )
 $$
 
-The <strong> Naïve Bayes <strong> make an additiional asumption on the independance of the words probabiltys
+The <strong> Naïve Bayes <strong> make an additiional asumption on the independance of words occurence to each other. more precisely it make the assumption that the words in sentences are independants to each other and in the word of probability this can be write as : 
+
+$$
+P(x_i) = P( w_{i1} \cap w_{i2} \cap w_{i3} \cap . . . \cap w_{in} ) 
+       = P(w_{i1}).P(w_{i2}).P(w_{i3}). . .P(w_{in})
+       = \prod_{j=1}^{j=n} w_{ij}
+$$
 
 Thank to Bayes Theorem
 ## Result 
