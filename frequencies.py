@@ -1,7 +1,7 @@
 def word_freq_per_class( dataframe ):
     """
-    PARAMETERS :
-    -----------
+    DESCRIPTION :
+    ------------
         Calculates the frequency of words in each class (spam and ham) based on a given dataframe.
 
     PARAMETERS :

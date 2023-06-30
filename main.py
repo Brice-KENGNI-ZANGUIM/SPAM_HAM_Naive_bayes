@@ -13,7 +13,7 @@ if __name__ == "__main__" :
     emails = load_dataset(datapath='medias/csv/emails.csv')
 
     # generate train and tests emails datas
-    train_emails , test_emails = split_datas( emails , (.7 , .3))
+    train_emails , test_emails = split_datas( emails , (.2 , .3))
 
     #print(train_emails.head())
 
