@@ -1,4 +1,3 @@
-import pandas as pd
 from plots import print_confusion_matrix
 from datas_loading import load_dataset, split_datas
 from naive_bayes_categorical_classifier import naive_bayes_classifier, make_prediction
@@ -13,7 +12,7 @@ if __name__ == "__main__" :
     emails = load_dataset(datapath='medias/csv/emails.csv')
 
     # generate train and tests emails datas
-    train_emails , test_emails = split_datas( emails , (.2 , .3))
+    train_emails , test_emails = split_datas( emails , (.7 , .3))
 
     #print(train_emails.head())
 
@@ -29,7 +28,7 @@ if __name__ == "__main__" :
     print_confusion_matrix(true_label , predict_label , class_names=("ham", "spam"), cmap = "hot_r")
 
     # Test your function
-    msg = "Thank you for your application to our job proposition, we will like to invite you for an interview"
+    msg = "hi hi"
     print(f"- Email :'{msg}' \n- Probability to be a SPAM : {100*naive_bayes_classifier(msg , word_freq, class_freq):.3f}%\n")
 
 

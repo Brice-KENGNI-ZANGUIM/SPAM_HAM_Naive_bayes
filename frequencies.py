@@ -17,7 +17,6 @@ def word_freq_per_class( dataframe ):
     
     word_freq_dict = {}
         
-    # This method yields an index and the data in the row so you can ignore the first returned value. 
     for _, sub_df in dataframe.iterrows():
         # Iterate over the words in each email
         for word in sub_df["words"]:
@@ -26,7 +25,7 @@ def word_freq_per_class( dataframe ):
                 # If word doesn't exist, initialize the count at 0
                 word_freq_dict[word] = {"spam": 0, "ham": 0}
             
-            # Check if the email was spam
+            # Check if the email was really a spam
             match sub_df["spam"]:
                 case 0: 
                     # If ham then add 1 to the count of ham
